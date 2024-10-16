@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Los Angeles</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-bs-theme="light" id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow" 
+     style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Center the links only inside the hamburger menu -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+          <a class="nav-link active mx-5" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-5" href="#section2">About</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link" href="#section3">Explore</a>
+        </li>
+      </ul>
+
+      <!-- Button remains unaffected -->
+      <button class="btn btn-outline-secondary" 
+              id="btnColor" onclick="changeColorMode()">Dark Mode</button>
+    </div>
+  </div>
+</nav>
+
+    <div class="section1 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="text-container text-white">
+              <h2 class="fw-light">IT'S TIME TO VISIT</h2>
+              <h1 class="display-1 fw-bold">LOS ANGELES</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2" id="section2">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-lg-center align-items-center"
+          style="height: 1000px"
+        >
+          <div
+            class="col-12 col-lg-12 col-xl-6 d-flex justify-content-lg-center"
+          >
+            <div class="img-container d-flex justify-content-lg-center pt-5">
+                <img
+                src="img/Hollywoodmorning.jpg"
+                data-light-src="img/Hollywoodmorning.jpg"
+                data-dark-src="img/Hollywoodnight.jpg"
+                class="img-fluid rounded theme-image"
+                style="height: 100%; width: 100%; object-fit: cover"
+            />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6 col-xl-6 d-flex justify-content-lg-center"
+          >
+            <div class="text-container pt-5">
+              <p>
+                Los Angeles,[a] often referred to by its initials L.A., is the
+              most populous city in the U.S. state of California. With an
+              estimated 3,820,914 residents within the city limits as of
+              2023,[8] It is the second-most populous city in the United States,
+              behind only New York City; it is also the commercial, financial
+              and cultural center of Southern California. Los Angeles has an
+              ethnically and culturally diverse population, and is the principal
+              city of a metropolitan area of 12.8 million people (2023). Greater
+              Los Angeles, which includes the Los Angeles and Riverside–San
+              Bernardino metropolitan areas, is a sprawling metropolis of over
+              18.3 million residents. The majority of the city proper lies in a
+              basin in Southern California adjacent to the Pacific Ocean in the
+              west and extending partly through the Santa Monica Mountains and
+              north into the San Fernando Valley, with the city bordering the
+              San Gabriel Valley to its east. It covers about 469 square miles
+              (1,210 km2),[6] and is the county seat of Los Angeles County,
+              which is the most populous county in the United States with an
+              estimated 9.86 million residents as of 2022.[17] It is the
+              third-most visited city in the U.S. with over 2.7 million visitors
+              as of 2023.[18]
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="section3">
+        <div class="row my-5">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow h-">
+                <img src="img/place1.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Hollywood Sign</h5>
+                  <p class="card-text">An iconic symbol of the entertainment industry, the Hollywood Sign overlooks Los Angeles from the hills of Griffith Park. Originally erected in 1923 as an advertisement, it now represents the heart of the film and television world.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow" >
+                <img src="img/place2.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Universal Studios</h5>
+                  <p class="card-text">A world-renowned film studio and theme park, Universal Studios offers thrilling rides, immersive attractions, and behind-the-scenes tours of famous movie sets. It's a must-visit for fans of cinema and adventure alike.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow">
+                <img src="img/place3.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Walk Of Fame</h5>
+                  <p class="card-text"> features over 2,600 brass stars embedded in the sidewalks of Hollywood Boulevard, honoring significant figures in the entertainment industry. Spanning from Gower to La Brea, it attracts millions of visitors each year, celebrating the legacy of film, music, and television.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow">
+                <img src="img/place4.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Sunset Boulevard</h5>
+                  <p class="card-text">Famous for its vibrant nightlife and historic music venues, Sunset Boulevard stretches through the heart of Los Angeles. It's lined with restaurants, shops, and iconic landmarks, embodying the spirit of Hollywood glamour.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow">
+                <img src="img/place5.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Santa Monica Beach</h5>
+                  <p class="card-text"> A beautiful stretch of coastline, Santa Monica Beach features a lively pier, stunning views, and a vibrant atmosphere. It's a popular spot for sunbathing, surfing, and enjoying the nearby shops and eateries.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow" >
+                <img src="img/place6.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">TCL Chinese Theater</h5>
+                  <p class="card-text">This historic movie palace, known for its handprints and footprints of Hollywood stars, offers a glimpse into the glitz and glamour of the film industry. It regularly hosts premieres and showcases classic and contemporary films.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow" >
+                <img src="img/place7.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Graffith Park</h5>
+                  <p class="card-text">One of the largest urban parks in the U.S., Griffith Park boasts hiking trails, stunning views of the city, and attractions like the Griffith Observatory and the Los Angeles Zoo, making it a perfect escape from the hustle and bustle.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card m-3 shadow" >
+                <img src="img/place8.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Dodger Stadium</h5>
+                  <p class="card-text">Home to the Los Angeles Dodgers, this iconic ballpark is known for its breathtaking views and rich baseball history. Fans gather here to enjoy America’s pastime in a vibrant, energetic atmosphere.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
