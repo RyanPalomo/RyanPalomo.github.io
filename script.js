@@ -1,16 +1,7 @@
-window.addEventListener('scroll', function () {
-    let header = document.getElementById('nav');
-    let section2 = document.getElementById('section2');
-
-    if (header && section2) {
-        if (window.scrollY > section2.offsetTop - header.offsetHeight) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }
+window.addEventListener('load', () => {
+    AOS.init();
+    console.log('AOS initialized');
 });
-
 var colorMode = "light";
 function changeColorMode() {
     const body = document.getElementById("body");
