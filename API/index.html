@@ -30,7 +30,7 @@
 
       var categContainer = document.getElementById ("categContainer");
       categories.forEach((name, i) =>{
-        categContainer.innerHTML += ` <div class="customCards col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-2 mt-5 border rounded"  onclick="redirectPage('${categUrls[name]}')" >
+        categContainer.innerHTML += ` <div class="customCards col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-2 mt-5 border rounded"  onclick="redirectPage('`+ categUrls[name] +`')" >
           <h1 class="display-3 mt-5">` + name + `</h1>
         </div>`
       })
