@@ -1,13 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>List</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .charactersButton:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 5px 1px;
+    }
+
+    .imgContainer {
+      border-radius: 20px;
+      width: fit-content;
+      height: 100px;
+    }
+
+    .imgContainer img {
+      width: 100%;
+      height: fit-content;
+      border-radius: 20px;
+      max-height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <div class="display-3">Naruto Characters</div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col text-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a id="prevButton" class="disabled page-link" onclick="prevPage()">Previous</a></li>
+            <li class="page-item"><a id="nextButton" class="page-link" onclick="nextPage()">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row" id="charContainer"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script>
+   
+
+    var container = document.getElementById("charContainer");
+
+    var pageCount = 20;
+    var page = 1;
+    const getCharacter = async () => {
+      for (var i = (((page - 1) * 20) + 1); i <= page * pageCount; i++) {
+        var response = await fetch('https://narutodb.xyz/api/character/' + i  );
+        var characters = await response.json();
+
+        var content = "";
+        content += `
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <a class="text-decoration-none"href="view.html?characterName=` + characters.name + `">
+                <div class="card rounded-5 shadow p-4 my-3 d-flex flex-row justify-content-start align-items-center">
+                  <div class="imgContainer">
+                    <img src="` + characters.images[0] + `">
+                  </div>
+                  <div class="ps-5 h5">`+ characters.id + ". " + characters.name + `</div>
+                </div>
+              </a>
+        </div>
+        `;
+
+        container.innerHTML += content;
+      }
+    }
+    getCharacter();
+
+    var nextButton = document.getElementById("nextButton");
+    var prevButton = document.getElementById("prevButton");
+
+    function nextPage(){
+      page += 1;
+      if(page>500){
+        page = 1;
+      }
+
+      if(page > 1){
+        prevButton.classList.remove("disabled");
+      } else {
+        prevButton.classList.add("disabled");
+      }
+
+      container.innerHTML = "";
+      getCharacter();
+    }
+
+    function prevPage(){
+      page -= 1;
+      if(page<1){
+        page = 500;
+      }
+      
+      if(page > 1){
+        prevButton.classList.remove("disabled");
+      } else {
+        prevButton.classList.add("disabled");
+      }
+
+      container.innerHTML = "";
+      getCharacter();
+    }
+  </script>
+</body>
+
 </html>
