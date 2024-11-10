@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GIT TEST</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .customCards{
+        width: 400px;
+        height: 400px;
+        cursor: pointer;
+
+      }
+    </style>
   </head>
   <body>
-    <h1> GIT TEST</h1>
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center" id="categContainer">
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      let categories = ["List", "Search", "View"];
+      let categUrls = {
+        "List": "pages/list.html",
+        "Search": "pages/search.html",
+        "View": "pages/view.html"
+      };
+
+      var categContainer = document.getElementById ("categContainer");
+      categories.forEach((name, i) =>{
+        categContainer.innerHTML += ` <div class="customCards col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-2 mt-5 border rounded"  onclick="redirectPage('${categUrls[name]}')" >
+          <h1 class="display-3 mt-5">` + name + `</h1>
+        </div>`
+      })
+
+      function redirectPage(url){
+        window.location.href = url;
+      }
+    </script>
   </body>
 </html>
