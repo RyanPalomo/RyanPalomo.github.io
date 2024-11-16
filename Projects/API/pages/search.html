@@ -40,12 +40,12 @@
   <div class="container">
     <div class="row mt-5">
       <div class="col">
-        <div class="display-3">Character Search</div>
+        <div class="display-3 d-flex justify-content-center align-items-center">Character Search</div>
       </div>
     </div>
     <div class="row my-5">
-      <div class="col p-5 d-flex flex-row">
-        <input type="text" class="search form-control py-3"  id="characterName" oninput="getCharacter()"
+      <div class="col-12 p-5 d-flex flex-row justify-content-center align-items-center">
+        <input type="text" class="search form-control py-3 "  id="characterName" oninput="getCharacter()"
           placeholder="Character Name" />
       </div>
     </div>
@@ -68,12 +68,12 @@
         const container = document.getElementById("charContainer");
 
         const content = `
-          <div class="col-12">
-            <div class="cardShow card rounded-5 shadow p-4 my-3 d-flex flex-row justify-content-start align-items-center">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="cardShow card rounded-5 shadow p-4 my-3 ">
               <div class="imgContainer" style="background-color:gray;">
                 <img src="`+ character.images[0] +`" alt="`+ character.name +`">
               </div>
-              <div class="ps-5 h2">`+ character.name +`</div>
+              <div class="ps-5 h2 text-center">`+ character.name +`</div>
             </div>
           </div>`;
 
