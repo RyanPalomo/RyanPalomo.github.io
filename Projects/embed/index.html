@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvel Studios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar {
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .vidcontainer {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .video {
+            width: 4000px;
+            height: 100%;
+            pointer-events: none;
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+        .bannertext {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 250px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.400);
+            font-size: 150px;
+        }
+
+        .bannercolor {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .bannerpic {
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .bannerpic img {
+            width: 1500px;
+        }
+
+        .credits {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 100px;
+
+        }
+
+        .section2 {
+            background-color: white;
+            height: 100vh;
+        }
+
+        .imageContainer {
+            height: auto;
+            width: auto;
+            margin-top: 100px;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .textContainer {
+            margin-top: 100px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .bannertext {
+                font-size: 90px;
+            }
+
+            .credits {
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary fixed-top" id="navbar">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Bootstrap" width="150px" height="60px">
+            </a>
+        </div>
+    </nav>
+
+    <div class="vidcontainer">
+        <iframe class="video"
+            src="https://www.youtube.com/embed/UhVjp48U2Oc?autoplay=1&controls=0&disablekb=1&mute=1&rel=0&loop=1&playlist=UhVjp48U2Oc&si=lgZri90AFlOGgqFf"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div class="bannercolor">
+        </div>
+        <div class="bannertext">
+            MARVEL STUDIOS
+            <div class="credits ">
+                <span style="font-size: 35px; font-weight: 100">By: RYAN PALOMO</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section2">
+        <div class="row my-5">
+            <div class="col-xl-4 col-lg-4 col-md-6 pt-5 d-flex align-items-center justify-content-center">
+                <div class="imageContainer">
+                    <img class="img rounded " src="img/founder.png">
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="textContainer text-center p-5 shadow">
+                    <p class="">Marvel Comics, founded in 1939 by Martin Goodman as Timely Publications, rose to
+                        prominence with characters like the Human Torch and Sub-Mariner in Marvel Comics #1. In the
+                        1940s, the company gained fame with Captain America but shifted focus to crime and horror after
+                        the superhero boom faded. Rebranded as Atlas Comics in the 1950s, it found its true identity as
+                        Marvel in the 1960s under Stan Lee, who, alongside artists like Jack Kirby and Steve Ditko,
+                        created iconic characters such as Spider-Man, the Fantastic Four, Iron Man, and the X-Men. This
+                        innovative, relatable approach to superheroes revolutionized the genre. By the 1970s, Marvel
+                        expanded into television, film, and licensing, eventually establishing Marvel Studios in the
+                        2000s, which launched the globally successful Marvel Cinematic Universe (MCU), solidifying
+                        Marvel as a cultural and entertainment powerhouse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script>
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const firstSectionHeight = document.querySelector('.vidcontainer').offsetHeight;
+
+            if (window.scrollY > firstSectionHeight) {
+                navbar.classList.add('navbar-visible');
+            } else {
+                navbar.classList.remove('navbar-visible');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
