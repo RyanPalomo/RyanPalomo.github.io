@@ -8,7 +8,7 @@ var typed = new Typed(".auto-type", {
 const Top = ScrollReveal({
   origin: 'top',
   distance: '80px',
-  duration: 2000,
+  duration: 3000,
   reset: false
 });
 
@@ -27,7 +27,7 @@ Top.reveal('#projContainer', {delay: 400})
 const Left = ScrollReveal({
   origin: 'left',
   distance: '80px',
-  duration: 2000,
+  duration: 3000,
   reset: false
 });
 
@@ -41,7 +41,7 @@ Left.reveal('.shs', {delay: 600})
 const Right = ScrollReveal({
   origin: 'right',
   distance: '80px',
-  duration: 2000,
+  duration: 3000,
   reset: false
 });
 
@@ -155,7 +155,7 @@ cards.forEach((card, index) => {
     ScrollReveal().reveal(card, {
         origin: 'bottom',
         distance: '50px',
-        duration: 1000,
+        duration: 2000,
         delay: index * 200,
         reset: false
     });
