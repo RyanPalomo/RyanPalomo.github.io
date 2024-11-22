@@ -16,9 +16,10 @@ Top.reveal('.aboutHeader', {delay: 200})
 Top.reveal('.card', {delay: 400})
 Top.reveal('.content', {delay: 200})
 Top.reveal('.myPic', {delay: 400})
+Top.reveal('.techno', {delay: 200})
 Top.reveal('.achievementsTitle', {delay: 200 })
 Top.reveal('#projContainer', {delay: 400})
-Top.reveal('.techno', {delay: 200})
+
 
 
 
