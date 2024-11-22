@@ -156,8 +156,10 @@ span{
   .aboutHeader{
     text-align: center;
   }
+
   .section4{
-    margin-bottom: 100px;
+    height: 100%;
+    margin-bottom: 100px !important;
     overflow: hidden;
   }
   .section5{

@@ -1,5 +1,5 @@
 var typed = new Typed(".auto-type", {
-    strings : ["Hello!", "Kumusta!", "Olá!", "Bonjour!"],
+    strings : ["Hello!", "Kumusta?", "Olá!", "Bonjour!"],
     typeSpeed : 80,
     backSpeed: 80,
     loop : true
@@ -142,7 +142,7 @@ for (let i = 0; i < projects.length; i++) {
                             <p class="card-text">`+ proj.description +`</p>
                         </div>
                         <div class="btnContainer d-flex justify-content-center align-items-center mb-4">
-                        <a href="`+ proj.link +`" target="_blank" class="btn btn-primary " style="max-width: 150px; background-color: white; color: black; border-color: black;">Click Here!</a>
+                        <a href="`+ proj.link +`" target="_blank" class="btn btn-primary " style="max-width: 150px; background-color: white; color: black; border-color: black;">Click Here</a>
                     </div>
                     </div>
         </div>`;
