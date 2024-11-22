@@ -8,17 +8,17 @@ var typed = new Typed(".auto-type", {
 const Top = ScrollReveal({
   origin: 'top',
   distance: '80px',
-  duration: 2500,
-  reset: true
+  duration: 3000,
+  reset: false
 });
 
-Top.reveal('.aboutHeader', {delay: 350})
-Top.reveal('.card', {delay: 550})
-Top.reveal('.content', {delay: 350})
-Top.reveal('.myPic', {delay: 550})
-Top.reveal('.techno', {delay: 350})
-Top.reveal('.achievementsTitle', {delay: 350 })
-Top.reveal('#projContainer', {delay: 550})
+Top.reveal('.aboutHeader', {delay: 400})
+Top.reveal('.card', {delay: 600})
+Top.reveal('.content', {delay: 400})
+Top.reveal('.myPic', {delay: 600})
+Top.reveal('.techno', {delay: 400})
+Top.reveal('.achievementsTitle', {delay: 400 })
+Top.reveal('#projContainer', {delay: 600})
 
 
 
@@ -27,22 +27,22 @@ Top.reveal('#projContainer', {delay: 550})
 const Left = ScrollReveal({
   origin: 'left',
   distance: '80px',
-  duration: 2500,
-  reset: true
+  duration: 3000,
+  reset: false
 });
 
-Left.reveal('.h1-custom', {delay: 350})
-Left.reveal('.social-links', {delay: 550})
-Left.reveal('.pic2', {delay: 350})
-Left.reveal('.hc', {delay: 550})
-Left.reveal('.pl', {delay: 650})
-Left.reveal('.shs', {delay: 750})
+Left.reveal('.h1-custom', {delay: 400})
+Left.reveal('.social-links', {delay: 600})
+Left.reveal('.pic2', {delay: 400})
+Left.reveal('.hc', {delay: 600})
+Left.reveal('.pl', {delay: 700})
+Left.reveal('.shs', {delay: 800})
 
 const Right = ScrollReveal({
   origin: 'right',
   distance: '80px',
-  duration: 2500,
-  reset: true
+  duration: 3000,
+  reset: false
 });
 
 
@@ -51,12 +51,12 @@ const Right = ScrollReveal({
 const Bottom = ScrollReveal({
   origin: 'bottom',
   distance: '80px',
-  duration: 2500,
-  reset: true
+  duration: 3000,
+  reset: false
 });
 
 
-Bottom.reveal('.tech-icon', {delay: 350})
+Bottom.reveal('.tech-icon', {delay: 400})
 
 
 
@@ -155,9 +155,9 @@ cards.forEach((card, index) => {
     ScrollReveal().reveal(card, {
         origin: 'bottom',
         distance: '50px',
-        duration: 3000,
-        delay: index * 250,
-        reset: true
+        duration: 2000,
+        delay: index * 200,
+        reset: false
     });
 });
 
