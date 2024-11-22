@@ -9,7 +9,7 @@ const Top = ScrollReveal({
   origin: 'top',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 });
 
 Top.reveal('.aboutHeader', {delay: 200})
@@ -28,7 +28,7 @@ const Left = ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 });
 
 Left.reveal('.h1-custom', {delay: 200})
@@ -42,7 +42,7 @@ const Right = ScrollReveal({
   origin: 'right',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 });
 
 
@@ -52,7 +52,7 @@ const Bottom = ScrollReveal({
   origin: 'bottom',
   distance: '80px',
   duration: 3000,
-  reset: true
+  reset: false
 });
 
 
