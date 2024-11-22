@@ -97,7 +97,7 @@ span{
 
 .section2{
     margin-bottom: 150px;
-    overflow: hidden;
+    
 }
 .section-title{
     text-align: center;
@@ -151,7 +151,8 @@ span{
   .section3{
     background-color:#dadada;
     padding-bottom: 100px;
-    overflow: hidden;
+    height: 100%;
+
   }
   .aboutHeader{
     text-align: center;
@@ -160,11 +161,13 @@ span{
   .section4{
     height: 100%;
     margin-bottom: 100px !important;
-    overflow: hidden;
+
   }
+  
   .section5{
-    overflow: hidden;
+    height: 100%;
   }
+
   .aboutSpan{
     color: #101720;
   }
