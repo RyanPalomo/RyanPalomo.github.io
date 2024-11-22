@@ -155,9 +155,9 @@ cards.forEach((card, index) => {
     ScrollReveal().reveal(card, {
         origin: 'bottom',
         distance: '50px',
-        duration: 800,
+        duration: 1000,
         delay: index * 200,
-        reset: true
+        reset: false
     });
 });
 
