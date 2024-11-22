@@ -128,6 +128,13 @@ const projects = [{
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     "image" : "img/Portfolio.png",
     "link" : "index.html"
+  },
+
+  {
+    "name" : "Marvel Studios",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "image" : "img/marvel.png",
+    "link" : "Projects/embed/index.html"
   }]
 
   let container = document.getElementById("projContainer");
