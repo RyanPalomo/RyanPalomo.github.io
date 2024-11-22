@@ -51,7 +51,7 @@ const Right = ScrollReveal({
 const Bottom = ScrollReveal({
   origin: 'bottom',
   distance: '80px',
-  duration: 2000,
+  duration: 3000,
   reset: true
 });
 
