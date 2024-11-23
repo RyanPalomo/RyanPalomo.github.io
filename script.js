@@ -5,6 +5,19 @@ var typed = new Typed(".auto-type", {
     loop : true
 })
 
+window.addEventListener('scroll', function() {
+  let header = document.getElementById('header');
+  let section2 = document.getElementById('section2');
+
+  if (header && section2) {
+      if (window.scrollY > section2.offsetTop - header.offsetHeight) {
+          header.classList.add('scrolled');
+      } else {
+          header.classList.remove('scrolled');
+      }
+  }
+});
+
 const Top = ScrollReveal({
   origin: 'top',
   distance: '80px',
@@ -61,18 +74,7 @@ Bottom.reveal('.tech-icon', {delay: 400})
 
 
 
-window.addEventListener('scroll', function() {
-  let header = document.getElementById('header');
-  let section2 = document.getElementById('section2');
 
-  if (header && section2) {
-      if (window.scrollY > section2.offsetTop - header.offsetHeight) {
-          header.classList.add('scrolled');
-      } else {
-          header.classList.remove('scrolled');
-      }
-  }
-});
 
 function addShadow(id) {
     document.getElementById(id).classList.add("shadow");
