@@ -31,5 +31,16 @@
     top: 0; 
 }
 .card {
-    min-height: 470px; /* Adjust this value as needed */
+    min-height: 470px;
   }
+  .social-links a:hover img {
+    transform: scale(1.2);
+}
+footer{
+    background-color: #101720;
+}
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
