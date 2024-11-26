@@ -45,3 +45,6 @@ footer{
     height: 24px;
     transition: transform 0.3s;
 }
+.embedContainer{
+    border-radius: 20px;
+}
