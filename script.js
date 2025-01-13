@@ -92,7 +92,7 @@ const projects = [{
   },
   {
     "name" : "ReservEase",
-    "description" : "A classroom reservation system designed specifically for IT students at PUP Sto. Tomas, streamlining the booking process.",
+    "description" : "A classroom reservation system designed specifically for IT students at PUP Sto. Tomas.",
     "image" : "img/ReservEase.png",
     "link" : "404.html"
   },
