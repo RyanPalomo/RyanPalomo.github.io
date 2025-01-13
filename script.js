@@ -86,57 +86,64 @@ function removeShadow(id) {
 
 const projects = [{
     "name" : "WasteLess",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A hackathon project where users can scan food waste, and the system generates recommendations on how to repurpose the waste sustainably.",
     "image" : "img/WasteLess.png",
     "link" : "404.html"
   },
   {
     "name" : "ReservEase",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A classroom reservation system designed specifically for IT students at PUP Sto. Tomas, streamlining the booking process.",
     "image" : "img/ReservEase.png",
     "link" : "404.html"
   },
     
   {
     "name" : "AlertIQconnect",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A mock-up system developed for a barangay in Malvar, Batangas, to enhance their manual processes and improve services for their citizens.",
     "image" : "img/AlertIQconnect.png",
     "link" : "404.html"
   },
 
   {
     "name" : "LA Website",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A responsive website crafted to showcase the beauty and attractions of Los Angeles.",
     "image" : "img/LA website.png",
     "link" : "Projects/LA_Bootstrap/index.html"
   },
 
   {
     "name" : "ComShop",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "An e-commerce platform created as a school project, tailored for the organization’s needs and promoting online shopping.",
     "image" : "img/ComShop.png",
     "link" : "404.html"
   },
   
   {
     "name" : "Naruto API",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A responsive website utilizing the Naruto API to provide fans with information and engaging features about the popular anime.",
     "image" : "img/narutoAPI.png",
     "link" : "Projects/API/index.html"
   },
 
   {
     "name" : "Portfolio",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A personal responsive website showcasing my skills, projects, and achievements as part of my web development journey.",
     "image" : "img/Portfolio.png",
     "link" : "index.html"
   },
 
   {
     "name" : "Marvel Studios",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "description" : "A responsive website dedicated to Marvel Studios, highlighting their movies and the Marvel Cinematic Universe.",
     "image" : "img/marvel.png",
     "link" : "Projects/embed/index.html"
+  },
+  
+  {
+    "name" : "Ecomend",
+    "description" : "A capstone project that is a web application utilizing machine learning and computer vision to identify dry solid food waste.",
+    "image" : "img/ecomend.png",
+    "link" : "404.html"
   }]
 
   let container = document.getElementById("projContainer");

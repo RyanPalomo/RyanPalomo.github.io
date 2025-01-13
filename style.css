@@ -149,7 +149,6 @@ span{
     background-color: #101720;
   }
   .section3{
-    background-color:#dadada;
     padding-bottom: 100px;
     height: 100%;
 
@@ -199,6 +198,8 @@ span{
     background-color: #f8f9fa; 
     border: 1px solid #ddd; 
     overflow: hidden; 
+    max-height: 414px;
+    max-width: 414px;
 }
 .pic-container img {
     width: 100%; 
