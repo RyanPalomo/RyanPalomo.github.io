@@ -122,7 +122,7 @@ const projects = [{
     "name" : "Naruto API",
     "description" : "A responsive website utilizing the Naruto API to provide fans with information and engaging features about the popular anime.",
     "image" : "img/narutoAPI.png",
-    "link" : "Projects/API/index.html"
+    "link" : "404.html"
   },
 
   {
