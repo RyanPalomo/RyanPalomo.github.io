@@ -144,7 +144,14 @@ const projects = [{
     "description" : "A capstone project that is a web application utilizing machine learning and computer vision to identify dry solid food waste.",
     "image" : "img/ecomend.png",
     "link" : "404.html"
-  }]
+  }, 
+  {
+    "name" : "TLC Independent Living",
+    "description" : "A Website Developed using Wordpress.",
+    "image" : "img/TLC.png",
+    "link" : "404.html"
+  }
+]
 
   let container = document.getElementById("projContainer");
 for (let i = 0; i < projects.length; i++) {
