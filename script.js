@@ -149,7 +149,7 @@ const projects = [{
     "name" : "TLC Independent Living",
     "description" : "A Website Developed using Wordpress.",
     "image" : "img/TLC.png",
-    "link" : "404.html"
+    "link" : "https://tlcindependentliving.com/"
   }
 ]
 
