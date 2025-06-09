@@ -9,15 +9,12 @@
     background-color: #ffffff !important;
 }
 .nav-elements {
-    display: flex;
-    justify-content: space-between; 
     align-items: center;
     gap: 20px; 
   }
   
 
   .nav-elements .navbar-nav {
-    display: flex;
     justify-content: center;
     gap: 30px;
   }
