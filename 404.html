@@ -18,7 +18,7 @@
         font-family: 'Poppins', sans-serif;
         font-size: clamp (1rem, 0.3043rem + 3.4783vw, 3rem);
     }
-    .container{
+    .body-Container{
         width: 100%;
         height: 100vh;
         background-color: #ffffff;
@@ -54,33 +54,35 @@
     }
 </style>
 <body>
-    <nav class="custom-nav navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-            <!-- Logo aligned left -->
-            <a class="navbar-brand ps-2 " href="#">
+    <header id="header">
+    <nav class="custom-nav navbar navbar-expand-lg py-3 shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand ps-4 " href="#">
                 <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top">
             </a>
             
-            <!-- Hamburger toggler button for mobile screens -->
+
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navigation links with Bootstrap's flex utilities -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav mx-auto text-center justify-content-evenly">
-                <a class="nav-link px-5" href="#">Home</a>
-                <a class="nav-link px-5" href="#about">About</a>
-                <a class="nav-link px-5" href="#skills">Skills</a>
-                <a class="nav-link px-5" href="#projects">Projects</a>
-                <a class="nav-link px-5" href="#achievements">Achievements</a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav text-center">
+                <a class="nav-link px-4" href="#">Home</a>
+                <a class="nav-link px-4" href="#about">About</a>
+                <a class="nav-link px-4" href="#technologies">Technologies</a>
+                <a class="nav-link px-4" href="#projects">Projects</a>
+                <a class="nav-link px-4" href="#achievements">Achievements</a>
               </div>
             </div>
             
         </div>
     </nav>
+</header>  
 
-    <div class="container">
+    <div class="container body-container">
         <div class="content col-12">
                 <h2 class="mt-5">Oops!</h2>
             <h1 class="h1"><span class="auto-type"></span></h2>
